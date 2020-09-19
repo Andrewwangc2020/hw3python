@@ -2,7 +2,6 @@
 
 def digit_sum(n:int):
   if(n>0):
-    print(f"{n}");
     return n%10 + digit_sum(n//10);
   else:
     return 0;
