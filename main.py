@@ -1,8 +1,9 @@
 #Author: Andrew Wang aqw5628@psu.edu
 
-def digit_sum(n):
+def digit_sum(n:int):
   if(n>0):
-    return n%10 + digit_sum(int(n/10));
+    print(f"{n}");
+    return n%10 + digit_sum(n//10);
   else:
     return 0;
 
